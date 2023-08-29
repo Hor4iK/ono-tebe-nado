@@ -1,1 +1,118 @@
 /* место для вашего кода */
+body {
+  width: 1440px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  justify-content: space-between;
+  align-items: center;
+  margin: 92px 52px;
+  font-size: 18px;
+}
+
+.header__menu-list {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 388px;
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  line-height: normal;
+}
+
+.header__menu-item {
+  list-style: circle;
+}
+
+.header__menu-item-active {
+  list-style: none;
+}
+
+.header__logo__dark {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  justify-self: center;
+  width: 148px;
+  height: 105px;
+}
+
+.header__contacts {
+  grid-column-start: 8;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.cover {
+  height: 757px;
+  padding: 165px 50px 50px;
+  background-color: #000;
+  background: url(../images/cover.jpg) no-repeat;
+  background-size: cover;
+}
+.cover-title {
+  margin-bottom: 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accent-span {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  align-items: start;
+}
+
+.aligned-text_center {
+  align-self: center;
+}
+
+.aligned-text_right {
+  align-self: end;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.overlay {
+}
+
+.cover__description {
+}
+
+.bet-button {
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  word-spacing: 22px;
+  color: #fff;
+}
