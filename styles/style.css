@@ -9,16 +9,16 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(8, auto);
+  grid-template-columns: auto 1fr 1fr auto;
   justify-content: space-between;
   align-items: center;
-  margin: 92px 52px;
+  margin: 94px 50px;
   font-size: 18px;
 }
 
 .header__menu-list {
   grid-column-start: 1;
-  grid-column-end: 3;
+  /* grid-column-end: 3; */
   min-width: 388px;
   display: flex;
   justify-content: space-between;
@@ -44,9 +44,9 @@ body {
 }
 
 .header__logo-link {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  justify-self: center;
+  db
+  grid-column-start: 2;
+  justify-self: end;
   width: 148px;
   height: 105px;
 }
@@ -57,7 +57,7 @@ body {
 
 .header__contacts {
   min-width: 240px;
-  grid-column-start: 8;
+  grid-column-start: 4;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -66,7 +66,6 @@ body {
 }
 
 .header__contacts-link {
-  display: inline;
   text-decoration-line: none;
   border-bottom: 1px #000 solid;
 }
@@ -82,6 +81,7 @@ body {
   background-color: #000;
   background: url(../images/cover.jpg) no-repeat;
   background-size: cover;
+  background-position: 0;
 }
 .cover-title {
   margin-bottom: 135px;
@@ -91,6 +91,7 @@ body {
 }
 
 .accent-span {
+  display: flex;
   color: #fff;
   font-size: 100px;
   font-weight: 700;
@@ -232,16 +233,14 @@ body {
 
 .about {
   height: 486px;
-  margin: 180px 50px;
+  margin: 182px 50px;
   display: grid;
-  grid-template-rows: repeat(6, auto);
   grid-template-columns: auto 1fr;
   column-gap: 25px;
 }
 
 .about__column-logo {
   grid-row-start: 1;
-  grid-row-end: 4;
   height: 240px;
   width: 430px;
   padding: 0 95px;
@@ -262,19 +261,24 @@ body {
 }
 
 .about__column-text {
-  grid-row-start: 2;
-  grid-row-end: 7;
-  justify-content: space-between;
+  grid-column-start: 2;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+
 }
 
 .about__title {
-  margin-bottom: 75px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 
 .footer {
