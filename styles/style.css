@@ -18,11 +18,9 @@ body {
 
 .header__menu-list {
   grid-column-start: 1;
-  /* grid-column-end: 3; */
-  min-width: 388px;
   display: flex;
   justify-content: space-between;
-  gap: 13px;
+  gap: 32px;
   line-height: normal;
 }
 
@@ -54,9 +52,10 @@ body {
   height: 100%;
 }
 
-.header__contacts {
-  min-width: 240px;
+.contacts {
+  max-width: 240px;
   grid-column-start: 4;
+  justify-self: end;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -64,7 +63,7 @@ body {
   line-height: 1.35;
 }
 
-.header__contacts-link {
+.contacts-link {
   text-decoration-line: none;
   border-bottom: 1px #000 solid;
 }
@@ -73,7 +72,6 @@ body {
   width: 100%;
   max-width: 1440px;
   min-width: 1100px;
-  height: 757px;
   padding: 165px 50px 50px;
   position: relative;
   z-index: -1;
@@ -149,6 +147,7 @@ body {
 .cover__description-text {
   margin-right: 78px;
   font-size: 22px;
+  font-weight: 400;
   line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 18px;
@@ -176,7 +175,7 @@ body {
 .lots__card-list-item {
   list-style: none;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   flex-grow: 1;
 }
 
@@ -306,9 +305,8 @@ body {
 }
 
 .footer__social-list {
-  width: 240px;
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
 }
 
 .footer__social-list-item {
